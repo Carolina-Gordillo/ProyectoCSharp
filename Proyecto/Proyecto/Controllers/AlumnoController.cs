@@ -42,13 +42,13 @@ namespace Proyecto.Controllers
             {
                 return new
                 {
-                    Resultado = "Alumno encontrado",
+                    stauts = 200,
                     Datos = respuesta
                 };
             }
             return new
-            {
-                Resultado = "NO SE ENCONTRÓ AL ALUMNO"
+            {     
+                status = 404
             };
             
         }
@@ -76,19 +76,19 @@ namespace Proyecto.Controllers
                 {
                     return new
                     {
-                        Resultado = "NO SE ENCONTRÓ EL CURSO"
+                        status = 404
                     };
                 }
                 return new
                 {
-                    Resultado = "Curso encontrado",
+                    status = 200,
                     Datos = respuesta_curso
                 };
             }
 
            return new
             {
-                Resultado = "NO SE ENCONTRÓ EL CURSO"
+                status = 404
             };
             
         }  
